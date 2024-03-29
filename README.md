@@ -53,5 +53,7 @@ This operation removes or deletes data records from the system. To delete a reco
 
 Route::delete('/product/{product}/delete',[ProductController::class,'delete'])->name ('todo.delete');
 
+Summary of CRUD operation:
 
+When a user sends a request that request first receives route. Then the route sends that request to the controller. The controller connects to the database. So, the controller fetches the data and shows it to the user.
 
